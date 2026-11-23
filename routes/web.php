@@ -25,9 +25,9 @@ Route::middleware('auth')->group(function () {
 Route::get('/items/{item}', [ItemController::class, 'show'])->name('items.show');
 
 // Dashboard Breeze (opsional)
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+//Route::get('/dashboard', function () {
+//    return view('dashboard');
+//})->middleware(['auth', 'verified'])->name('dashboard');
 
 // Route Auth dari Breeze (WAJIB ADA DI PALING BAWAH)
 require __DIR__.'/auth.php';

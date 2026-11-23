@@ -26,8 +26,9 @@ class ItemController extends Controller
         $validated = $request->validate([
             'nama_barang' => 'required', 'deskripsi' => 'required',
             'lokasi' => 'required', 'status' => 'required', 'kontak' => 'required',
-            'foto' => 'nullable|image|max:2048'
+            'foto' => 'nullable|image|max:5120'
         ]);
+        
         if ($request->hasFile('foto')) {
             $validated['foto'] = $request->file('foto')->store('items', 'public');
         }

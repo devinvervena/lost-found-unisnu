@@ -40,6 +40,18 @@
             <input type="file" name="foto" class="w-full border p-2 rounded bg-gray-50">
         </div>
 
+        <!-- KODE UNTUK MENAMPILKAN PESAN ERROR -->
+        @if ($errors->any())
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
+        
         <button type="submit" class="bg-[#00743f] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#005c32] transition w-full shadow-md">Simpan Laporan</button>
     </form>
 </div>

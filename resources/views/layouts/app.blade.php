@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lost & Found UNISNU</title>
+    <title>SITEMU UNISNU</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 min-h-screen font-sans">
@@ -13,7 +13,7 @@
             <!-- Logo dan Teks -->
             <a href="{{ route('items.index') }}" class="flex items-center gap-3 hover:opacity-90 transition">
                 <img src="{{ asset('images/logo-unisnu.png') }}" alt="Logo UNISNU" class="h-10 w-10 bg-white rounded-full p-1">
-                <span class="font-bold text-xl tracking-wide hidden md:block">Lost & Found UNISNU</span>
+                <span class="font-bold text-xl tracking-wide hidden md:block">SITEMU UNISNU</span>
             </a>
             
             <div class="space-x-4 items-center flex">

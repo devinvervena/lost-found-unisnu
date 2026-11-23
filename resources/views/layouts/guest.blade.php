@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Login - Lost & Found UNISNU</title>
+        <title>Login - SITEMU UNISNU</title>
         
         <!-- Pakai Tailwind CDN -->
         <script src="https://cdn.tailwindcss.com"></script>
@@ -15,7 +15,7 @@
             <div>
                 <a href="/" class="flex items-center justify-center gap-3">
                     <img src="{{ asset('images/logo-unisnu.png') }}" alt="Logo UNISNU" class="h-14 w-14 bg-white rounded-full p-1 shadow-md">
-                    <span class="text-2xl font-bold text-[#00743f]">Lost & Found UNISNU</span>
+                    <span class="text-2xl font-bold text-[#00743f]">SITEMU UNISNU</span>
                 </a>
             </div>
 
